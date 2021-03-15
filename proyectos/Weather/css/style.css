@@ -1,0 +1,275 @@
+/* ----------- Generales  ----------- */
+
+:root {
+  --lightGrey: #efeeee;
+  --dark: #707070;
+  --blue: #959fac;
+  --maximaAnchura: 536px;
+  --minimaAnchura: 260px;
+  --fuente: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--fuente);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--lightGrey);
+}
+
+.opacity {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.app-container {
+  height: 100vh;
+  max-width: 1920px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark);
+  overflow: hidden;
+}
+
+/* ----------- Texto entrada  ----------- */
+
+.claim-info {
+  position: absolute;
+  width: 100vw;
+  top: 10vh;
+  padding: 0 10vw;
+  font-size: 26px;
+  line-height: 70px;
+  text-align: left;
+  opacity: 1;
+}
+
+
+.hiden {
+  background-color: var(--lightGrey);
+  overflow: hidden;
+}
+
+.hiden span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+.claim-info__element {
+  font-weight: 300;
+}
+
+.claim-info__element--bold {
+  display: block;
+  margin-top: 10vh;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 90px;
+  /* text-align: center; */
+}
+
+@media screen and (max-width: 800px) {
+
+  .app-container {
+    height: 100vh;
+    padding-bottom: 5vh;
+  
+  
+  }
+
+  .claim-info {
+    top: 20vh;
+    font-size: 16px;
+    line-height: 50px;
+  }
+
+  .claim-info__element--bold {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .claim-info {
+    top: 15vh;
+    font-size: 12px;
+    line-height: 30px;
+  }
+
+  .claim-info__element--bold {
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
+
+/* ----------- Icono weather  ----------- */
+.weather-icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.weather-icon__element {
+  height: 600px;
+  width: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .weather-icon__element {
+    height: 400px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .weather-icon__element {
+    height: 100%;
+    width: auto;
+  }
+}
+
+/* ----------- Información principal  ----------- */
+.weather-info {
+  width: var(--maximaAnchura);
+  min-width: var(--minimaAnchura);
+  margin: 0 10rem 10rem 10rem;
+}
+
+.main-info {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.main-info__temp {
+  font-size: 135px;
+  font-weight: 300;
+}
+
+.main-info__city {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.main-info__description {
+  font-size: 28px;
+  font-weight: 300;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .weather-info {
+    width: var(--minimaAnchura);
+  }
+  .main-info__temp {
+    font-size: 85px;
+  }
+
+  .main-info__city {
+    font-size: 22px;
+  }
+
+  .main-info__description {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .weather-info {
+    margin: 5rem 10rem 3rem 10rem;
+  }
+  .main-info {
+    margin-top: 12rem;
+    margin-bottom: 3rem;
+  }
+}
+/* ----------- Información secundaria  ----------- */
+
+.second-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.humidity__title,
+.max-min__title,
+.wind__title {
+  font-size: 26px;
+  font-weight: 300;
+}
+.humidity__value,
+.max-min__value,
+.wind__value {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.second-info__humidity,
+.second-info__max-min,
+.second-info__wind {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .humidity__title,
+  .wind__title,
+  .max-min__title {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .humidity__value,
+  .wind__value,
+  .max-min__value {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+/* ----------- Boton buscar ciudad  ----------- */
+
+.search-city {
+  border-radius: 25px;
+  border: 0px;
+  height: 40px;
+  width: 260px;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: -5px -5px 15px -2px rgb(255, 255, 255),
+    5px 5px 15px -2px rgba(0, 0, 0, 0.28);
+  color: var(--lightGrey);
+  text-align: center;
+  outline: none;
+
+  background-color: var(--dark);
+  transition: 0.4s ease-in-out;
+}
+
+.search-city:focus {
+  background-color: var(--lightGrey);
+  color: var(--dark);
+  border: 2px solid var(--dark);
+}
+::placeholder {
+  color: var(--lightGrey);
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .search-city {
+    width: 192px;
+    font-size: 16px;
+    
+  }
+}

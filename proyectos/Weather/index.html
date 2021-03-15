@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app - JS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180713689-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180713689-1');
+</script>
+
+  </head>
+  <body>
+    <div class="app-container ">
+      <div class="weather-icon opacity">
+       
+      </div>
+
+      <section class="claim-info">
+        <h2 class="claim-info__element hiden"> 
+          <span class="text"> - Coge la chaqueta que luego refresca. </span>  </h2>
+        <h2 class="claim-info__element hiden"> 
+          <span class="text"> - Abuela, ¡que hace sol! </span> </h2>
+        <h2 class="claim-info__element--bold hiden">
+          <span class="text"> Escribe tu ciudad,<br> y que tu abuela  se quede tranquila. </span></h2>
+       
+      </section>
+
+
+
+      <main class="weather-info opacity ">
+
+        <section class="main-info">
+          <div class="main-info__temp"> <span>°</span></div>
+          <section>
+            <div class="main-info__city"></div>
+            <div class="main-info__description"></div>
+          </section>
+        </section>
+
+        <section class="second-info">
+          <section class="second-info__humidity">
+            <div class="humidity__value"></div>
+            <div class="humidity__title">Humidity</div>
+          </section>
+
+          <section class="second-info__max-min">
+            <div class="max-min__value"></div>
+            <div class="max-min__title">Min-Max</div>
+          </section>
+
+          <section class="second-info__wind">
+            <div class="wind__value">3</div>
+            <div class="wind__title">Wind</div>
+          </section>
+        </section>
+      </main>
+
+      <input
+        class="search-city "
+        type="text"
+        autocomplete="off"
+        onfocus="this.value=''"
+        placeholder="Escribe tu ciudad "
+     
+      />
+     
+
+    </div>
+
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" 
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" 
+    crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

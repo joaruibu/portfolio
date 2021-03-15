@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgb(237, 240, 242); display: block; z-index: 1; position: relative; shape-rendering: auto;" width="3000" height="1080" preserveAspectRatio="xMidYMid" viewBox="0 0 3000 1080">
+<g transform=""><g transform="translate(3150,540) scale(100)" opacity="0.9">
+  <path d="M16.500000000000004 0 C16.500000000000004 7.425000000000001 14.680238623099461 10.57691916244324 8.250000000000004 14.28941916244324 S-1.8197613769005399 18.00191916244324 -8.249999999999998 14.289419162443242 S-16.500000000000004 7.4250000000000025 -16.500000000000004 2.020667218593133e-15 S-14.680238623099466 -10.576919162443234 -8.250000000000009 -14.289419162443238 S1.819761376900531 -18.001919162443244 8.249999999999991 -14.289419162443247 S16.5 -7.425000000000005 16.500000000000004 -4.041334437186266e-15" fill="#0f4c81" stroke-width="0">
+    <animateTransform attributeName="transform" type="rotate" dur="16.666666666666664s" repeatCount="indefinite" values="0;120"></animateTransform>
+  </path>
+</g></g>
+</svg>
